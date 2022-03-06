@@ -62,7 +62,7 @@ N - Node.js (Fullstack)
         image: postgres:latest
         environment:
           - POSTGRES_USER=postgres
-          - POSTGRES_PASSWORD=551666545b837d480aed4c554cf4f13b
+          - POSTGRES_PASSWORD=123456
           - POSTGRES_DB=userdb
         volumes:
           - ./backend/scripts/db:/docker-entrypoint-initdb.d/
