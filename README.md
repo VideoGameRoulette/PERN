@@ -23,8 +23,10 @@ N - Node.js (Fullstack)
 
 ## Frontend
 `npm i`
+
 `yarn start`
 
 ## Backend
 `npm i`
+
 `nodemon index`
