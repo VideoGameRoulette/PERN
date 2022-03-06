@@ -1,3 +1,6 @@
+# CUSTOM
+docker-compose
+
 # Logs
 logs
 *.log
