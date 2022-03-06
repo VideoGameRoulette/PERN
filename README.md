@@ -6,6 +6,7 @@ Template for PERN Stack Web Applications
 ![react](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/React.png)
 ![node](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Node.png)
 ![nodemon](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Nodemon.png)
+![bootstrap](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Bootstrap.png)
 
 ## What is PERN Stack?
 P - Postgres (Database)
