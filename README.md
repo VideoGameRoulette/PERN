@@ -31,3 +31,6 @@ N - Node.js (Fullstack)
 `npm i`
 
 `node index` or `nodemon index`
+
+## Client Browser URL
+[http://localhost:3000](http://localhost:3000)
