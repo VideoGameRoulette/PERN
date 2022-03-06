@@ -38,35 +38,33 @@ N - Node.js (Fullstack)
 [http://localhost:3000](http://localhost:3000)
 
 ## docker-compose.yml Example
-`
-version: '3'
-services:
-  frontend:
-    build:
-      context: frontend
-      dockerfile: Dockerfile.local
-    volumes:
-      - ./frontend:/code
-      - /code/node_modules
-    ports:
-      - 3000:3000
-  backend:
-    build:
-      context: backend
-      dockerfile: Dockerfile.local
-    volumes:
-      - ./backend:/code
-      - /code/node_modules
-    ports:
-      - 5000:5000
-  db:
-    image: postgres:latest
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=123456
-      - POSTGRES_DB=userdb
-    volumes:
-      - ./backend/scripts/db:/docker-entrypoint-initdb.d/
-    ports:
-      - 5432:5432
-`
+> version: '3'
+> services:
+>   frontend:
+>     build:
+>       context: frontend
+>       dockerfile: Dockerfile.local
+>     volumes:
+>       - ./frontend:/code
+>       - /code/node_modules
+>     ports:
+>       - 3000:3000
+>   backend:
+>     build:
+>       context: backend
+>       dockerfile: Dockerfile.local
+>     volumes:
+>       - ./backend:/code
+>       - /code/node_modules
+>     ports:
+>       - 5000:5000
+>   db:
+>     image: postgres:latest
+>     environment:
+>       - POSTGRES_USER=postgres
+>       - POSTGRES_PASSWORD=551666545b837d480aed4c554cf4f13b
+>       - POSTGRES_DB=userdb
+>     volumes:
+>       - ./backend/scripts/db:/docker-entrypoint-initdb.d/
+>     ports:
+>       - 5432:5432
