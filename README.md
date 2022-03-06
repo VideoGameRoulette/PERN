@@ -2,9 +2,9 @@
 Template for PERN Stack Web Applications
 
 ![postgres](https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png)
-![express](https://cdn.buttercms.com/2q5r816LTo2uE9j7Ntic)
-![react](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png)
-![node](https://upload.wikimedia.org/wikipedia/commons/archive/d/d9/20160324173914%21Node.js_logo.svg)
+![express](https://nashvillesoftwareschool.com/images/technologies/express.png)
+![react](https://miro.medium.com/fit/c/294/294/1*zM1KvlaaSIpBsHRwLtND_g.jpeg)
+![node](https://icon2.cleanpng.com/20180425/xeq/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84de7b809.1939946215246930699491.jpg)
 
 ## What is PERN Stack?
 P - Postgres (Database)
