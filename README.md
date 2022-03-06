@@ -1,6 +1,11 @@
 # PERN
 Template for PERN Stack Web Applications
 
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+
 ## What is PERN Stack?
 P - Postgres (Database)
 
