@@ -22,7 +22,9 @@ N - Node.js (Fullstack)
 # Start Without Docker
 
 ## Frontend
+`npm i`
 `yarn start`
 
 ## Backend
+`npm i`
 `nodemon index`
