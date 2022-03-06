@@ -1,5 +1,5 @@
 # CUSTOM
-docker-compose.yml
+docker-compose_prod.yml
 
 # Logs
 logs

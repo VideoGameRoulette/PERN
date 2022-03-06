@@ -12,9 +12,7 @@ const AddUser = () => {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body)
             });
-            if (response.status(200)) {
-                console.log("Created User.");
-            }
+            window.location = '/';
         } catch (error) {
             console.error(error.message);
         }

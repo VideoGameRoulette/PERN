@@ -1,14 +1,14 @@
 # PERN
 Template for PERN Stack Web Applications
 
-![postgres](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Postgres.png)
-![express](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Express.png)
-![react](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/React.png)
-![node](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Node.png)
+![postgres](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Postgres.png)
+![express](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Express.png)
+![react](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/React.png)
+![node](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Node.png)
 
-![nodemon](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Nodemon.png)
-![bootstrap](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Bootstrap.png)
-![docker](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/Docker.png)
+![nodemon](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Nodemon.png)
+![bootstrap](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Bootstrap.png)
+![docker](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Docker.png)
 
 ## What is PERN Stack?
 P - Postgres (Database)
@@ -36,36 +36,3 @@ N - Node.js (Fullstack)
 
 ## Client Browser URL
 [http://localhost:3000](http://localhost:3000)
-
-## docker-compose.yml Example
-    version: '3'
-    services:
-      frontend:
-        build:
-          context: frontend
-          dockerfile: Dockerfile.local
-        volumes:
-          - ./frontend:/code
-          - /code/node_modules
-        ports:
-          - 3000:3000
-      backend:
-        build:
-          context: backend
-          dockerfile: Dockerfile.local
-        volumes:
-          - ./backend:/code
-          - /code/node_modules
-        ports:
-          - 5000:5000
-      db:
-        image: postgres:latest
-        environment:
-          - POSTGRES_USER=postgres
-          - POSTGRES_PASSWORD=123456
-          - POSTGRES_DB=userdb
-        volumes:
-          - ./backend/scripts/db:/docker-entrypoint-initdb.d/
-        ports:
-          - 5432:5432
-
