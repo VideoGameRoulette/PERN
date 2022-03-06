@@ -3,8 +3,11 @@ Template for PERN Stack Web Applications
 
 ## What is PERN Stack?
 P - Postgres (Database)
+
 E - Express.js (Backend)
+
 R - React.js (Frontend)
+
 N - Node.js (Fullstack)
 
 # Start With Docker
