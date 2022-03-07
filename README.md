@@ -16,7 +16,7 @@ E - Express.js (Backend)
 
 R - React.js (Frontend)
 
-N - Node.js (Fullstack)
+N - Node.js (JavaScript Runtime)
 
 # Start With Docker
 `docker-compose up --build --remove-orphans`
