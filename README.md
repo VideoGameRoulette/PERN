@@ -5,7 +5,6 @@ Template for PERN Stack Web Applications
 ![express](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Express.png)
 ![react](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/React.png)
 ![node](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Node.png)
-
 ![nodemon](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Nodemon.png)
 ![bootstrap](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Bootstrap.png)
 ![docker](https://raw.githubusercontent.com/VideoGameRoulette/PERN/main/readme/Docker.png)
