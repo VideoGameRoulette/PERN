@@ -35,3 +35,6 @@ N - Node.js (JavaScript Runtime)
 
 ## Client Browser URL
 [http://localhost:3000](http://localhost:3000)
+
+## Server Browser URL
+[http://localhost:5000](http://localhost:5000)
