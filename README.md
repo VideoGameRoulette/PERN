@@ -33,5 +33,8 @@ N - Node.js (JavaScript Runtime)
 
 `node index` or `nodemon index`
 
-## Client Browser URL
+## Client Browser URL (Frontend)
 [http://localhost:3000](http://localhost:3000)
+
+## Server Browser URL (Backend)
+[http://localhost:5000](http://localhost:5000)
