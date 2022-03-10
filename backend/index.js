@@ -47,7 +47,9 @@ app.put("/api/rauser/:id", async (req, res) => {
 app.post("/api/register", async (req, res) => {
     try {
         const { username } = req.body;
-        const newUser = await pool.query("INSERT INTO users (u_id, username) VALUES($1, $2)", [uuidv4(), username]);
+        let date = new Date();
+        console.log(date);
+        const newUser = await pool.query("INSERT INTO users (u_id, username, created_at, updated_at) VALUES($1, $2, $3, $4)", [uuidv4(), username, date, date]);
         res.json(newUser.rows[0]);
     }
     catch (error) {
@@ -81,7 +83,8 @@ app.get("/api/user/:id", async (req, res) => {
 app.put("/api/user/:id", async (req, res) => {
     try {
         const { username } = req.body;
-        const userResults = await pool.query("UPDATE users SET username = $1 WHERE u_id = $2", [username, req.params.id]);
+        let date = new Date();
+        const userResults = await pool.query("UPDATE users SET username = $1, updated_at = $2 WHERE u_id = $3", [username, date, req.params.id]);
         res.json(userResults.rows[0]);
     }
     catch (error) {
