@@ -7,8 +7,6 @@
         volumes:
           - ./frontend:/code
           - /code/node_modules
-        ports:
-          - 3000:3000
       backend:
         build:
           context: backend
@@ -16,8 +14,6 @@
         volumes:
           - ./backend:/code
           - /code/node_modules
-        ports:
-          - 5000:5000
       db:
         image: postgres:latest
         environment:
@@ -28,3 +24,9 @@
           - ./backend/scripts/db:/docker-entrypoint-initdb.d/
         ports:
           - 5432:5432
+      reverse-proxy:
+        image: caddy:2.0.0
+        ports:
+          - 3000:3000
+        volumes:
+          - ./Caddyfile:/etc/caddy/Caddyfile

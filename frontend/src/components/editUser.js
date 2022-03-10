@@ -8,7 +8,7 @@ const EditUser = ({ user, idx }) => {
         e.preventDefault();
         try {
             const body = { username };
-            const response = await fetch(`http://localhost:5000/user/${user.u_id}`, {
+            const response = await fetch(`/api/user/${user.u_id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(body)
@@ -23,7 +23,7 @@ const EditUser = ({ user, idx }) => {
         e.preventDefault();
         try {
             const body = { retro };
-            const response = await fetch(`http://localhost:5000/rauser/${user.u_id}`, {
+            const response = await fetch(`/api/rauser/${user.u_id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(body)

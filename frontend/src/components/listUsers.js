@@ -7,7 +7,7 @@ const ListUsers = () => {
 
     const getUsers = async () => {
         try {
-            const response = await fetch("http://localhost:5000/users");
+            const response = await fetch("/api/users");
             const jsonData = await response.json();
             setUsers(jsonData);
             setLoaded(true);
@@ -18,7 +18,7 @@ const ListUsers = () => {
 
     const deleteUser = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/user/${id}`, {
+            const response = await fetch(`/api/user/${id}`, {
                 method: "DELETE"
             });
             setUsers(users.filter(user => user.u_id != id));

@@ -21,7 +21,7 @@ const RA_AuthQS = () => {
 };
 
 //UPDATE USER DATE
-app.put("/rauser/:id", async (req, res) => {
+app.put("/api/rauser/:id", async (req, res) => {
     try {
         const { retro } = req.body;
         const userResults = await pool.query("UPDATE users SET retro = $1 WHERE u_id = $2", [retro, req.params.id]);
@@ -44,7 +44,7 @@ app.put("/rauser/:id", async (req, res) => {
 // });
 
 //CREATE NEW USER
-app.post("/register", async (req, res) => {
+app.post("/api/register", async (req, res) => {
     try {
         const { username } = req.body;
         const newUser = await pool.query("INSERT INTO users (u_id, username) VALUES($1, $2)", [uuidv4(), username]);
@@ -56,7 +56,7 @@ app.post("/register", async (req, res) => {
 });
 
 //GET USER DATA
-app.get("/users", async (req, res) => {
+app.get("/api/users", async (req, res) => {
     try {
         const userResults = await pool.query("SELECT * FROM users");
         res.json(userResults.rows);
@@ -67,7 +67,7 @@ app.get("/users", async (req, res) => {
 });
 
 //GET USER DATA
-app.get("/user/:id", async (req, res) => {
+app.get("/api/user/:id", async (req, res) => {
     try {
         const userResults = await pool.query("SELECT * FROM users WHERE u_id = $1", [req.params.id]);
         res.json(userResults.rows[0]);
@@ -78,7 +78,7 @@ app.get("/user/:id", async (req, res) => {
 });
 
 //UPDATE USER DATE
-app.put("/user/:id", async (req, res) => {
+app.put("/api/user/:id", async (req, res) => {
     try {
         const { username } = req.body;
         const userResults = await pool.query("UPDATE users SET username = $1 WHERE u_id = $2", [username, req.params.id]);
@@ -90,7 +90,7 @@ app.put("/user/:id", async (req, res) => {
 })
 
 //DELETE USER DATA
-app.delete("/user/:id", async (req, res) => {
+app.delete("/api/user/:id", async (req, res) => {
     try {
         const userResults = await pool.query("DELETE FROM users WHERE u_id = $1", [req.params.id]);
         res.json(userResults.rows[0]);
