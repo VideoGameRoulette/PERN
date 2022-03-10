@@ -22,18 +22,6 @@ N - Node.js (JavaScript Runtime)
 # Start With Docker
 `docker-compose up --build --remove-orphans`
 
-# Start Without Docker
-
-## Frontend
-`npm i`
-
-`yarn start`
-
-## Backend
-`npm i`
-
-`node index` or `nodemon index`
-
 ## Client Browser URL (Frontend)
 [http://localhost:3000](http://localhost:3000)
 
